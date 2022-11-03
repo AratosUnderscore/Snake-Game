@@ -32,7 +32,7 @@ Track your progress with the project by updating the checkmarks down below
 **All these changes can be made in `./game/studentCode.ts`**
 
 - [X] Handle moving the snake head from the direction passed in
-- [ ] Detect collision with a wall
+- [x] Detect collision with a wall
 - [ ] Detect collision with an apple
 - [ ] Handle consuming an apple
 - [ ] Add default body parts
