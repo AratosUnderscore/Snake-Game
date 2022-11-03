@@ -120,6 +120,10 @@ export class Snake implements ISnake {
         if (snakeHeadCoordinate.x < 0 || snakeHeadCoordinate.x >= gridSize || snakeHeadCoordinate.y < 0 || snakeHeadCoordinate.y >= gridSize ){
             return Collision.WALL;
         }
+        
+        if (snakeHeadCoordinate.x == appleLocation.x && snakeHeadCoordinate.y == appleLocation.y){
+            return Collision.APPLE;
+        }
         return null;
     }
 
