@@ -33,7 +33,7 @@ Track your progress with the project by updating the checkmarks down below
 
 - [X] Handle moving the snake head from the direction passed in
 - [x] Detect collision with a wall
-- [ ] Detect collision with an apple
+- [x] Detect collision with an apple
 - [ ] Handle consuming an apple
 - [ ] Add default body parts
 - [ ] Handle updating the snake body when the head moves
