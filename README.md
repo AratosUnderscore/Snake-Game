@@ -35,9 +35,9 @@ Track your progress with the project by updating the checkmarks down below
 - [x] Detect collision with a wall
 - [x] Detect collision with an apple
 - [x] Handle consuming an apple
-- [ ] Add default body parts
-- [ ] Handle updating the snake body when the head moves
-- [ ] Detect collisions with the body
+- [x] Add default body parts
+- [x] Handle updating the snake body when the head moves
+- [X] Detect collisions with the body
 - [ ] Update background for the apple to `./game-assets/apple.png`
 - [ ] Update image parts for the snake
 
