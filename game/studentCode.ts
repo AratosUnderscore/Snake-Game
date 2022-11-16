@@ -30,7 +30,7 @@ export class BoardHelper implements IBoardHelper {
     createApple(freeCells: Coordinate[]): CellItem {
         let x = freeCells.length;
 
-        return new CellItem(freeCells[Math.floor(Math.random() * 98)], 'red');
+        return new CellItem(freeCells[Math.floor(Math.random() * 98)], './game-assets/apple.png');
     }
 
     /**
@@ -41,16 +41,16 @@ export class BoardHelper implements IBoardHelper {
     getDirection(keyBoardEvent: KeyboardEvent): Direction | null {
         console.log(keyBoardEvent.code)
         switch (keyBoardEvent.code) {
-            case "KeyA":
+            case "ArrowLeft":
                 return Direction.LEFT
 
-            case "KeyD":
+            case "ArrowRight":
                 return Direction.RIGHT
 
-            case "KeyW":
+            case "ArrowUp":
                 return Direction.UP
 
-            case "KeyS":
+            case "ArrowDown":
                 return Direction.DOWN
         }
 
@@ -60,8 +60,8 @@ export class BoardHelper implements IBoardHelper {
 
 
 export class Snake implements ISnake {
-    protected snakeHead = new CellItem(new Coordinate(5, 5), 'blue');
-    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), 'blue'), new CellItem(new Coordinate(3, 5), 'blue')];
+    protected snakeHead = new CellItem(new Coordinate(5, 5), 'green');
+    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), 'green'), new CellItem(new Coordinate(3, 5), 'green')];
     protected touchedApple = false;
     /**
      * @returns the Snake Head Cell Item
@@ -117,11 +117,8 @@ export class Snake implements ISnake {
         }
         else {
             this.snakeBody.pop()
-
-
-
         }
-        this.snakeBody.unshift(new CellItem(new Coordinate(oldX, oldY), 'blue'));
+        this.snakeBody.unshift(new CellItem(new Coordinate(oldX, oldY), 'green'));
 
     }
 
@@ -156,7 +153,6 @@ export class Snake implements ISnake {
      */
     consumeApple(): void {
         this.touchedApple = true;
-
 
     }
 
