@@ -30,7 +30,7 @@ export class BoardHelper implements IBoardHelper {
     createApple(freeCells: Coordinate[]): CellItem {
         let x = freeCells.length;
 
-        return new CellItem(freeCells[Math.floor(Math.random() * 98)], './game-assets/akshay.png');
+        return new CellItem(freeCells[Math.floor(Math.random() * 98)], './game-assets/peach.png');
     }
 
     /**
