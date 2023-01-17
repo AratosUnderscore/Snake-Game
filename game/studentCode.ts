@@ -60,8 +60,8 @@ export class BoardHelper implements IBoardHelper {
 
 
 export class Snake implements ISnake {
-    protected snakeHead = new CellItem(new Coordinate(5, 5), './game-assets/mirza_head.png');
-    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), './game-assets/mirza_body.png'), new CellItem(new Coordinate(3, 5), './game-assets/mirza_body.png')];
+    protected snakeHead = new CellItem(new Coordinate(5, 5), './game-assets/snaaket_head.png');
+    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), './game-assets/snaaket_body.png'), new CellItem(new Coordinate(3, 5), './game-assets/snaaket_body.png')];
     protected touchedApple = false;
     /**
      * @returns the Snake Head Cell Item
@@ -118,7 +118,7 @@ export class Snake implements ISnake {
         else {
             this.snakeBody.pop()
         }
-        this.snakeBody.unshift(new CellItem(new Coordinate(oldX, oldY), './game-assets/mirza_body.png'));
+        this.snakeBody.unshift(new CellItem(new Coordinate(oldX, oldY), './game-assets/snaaket_body.png'));
 
     }
 
