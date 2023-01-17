@@ -61,7 +61,7 @@ export class BoardHelper implements IBoardHelper {
 
 export class Snake implements ISnake {
     protected snakeHead = new CellItem(new Coordinate(5, 5), './game-assets/snaaket_body.png');
-    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), './game-assets/snaaket_body.png'), new CellItem(new Coordinate(3, 5), './game-assets/snaaket_body.png')];
+    protected snakeBody: CellItem[] = [new CellItem(new Coordinate(4, 5), './game-assets/saaket.png'), new CellItem(new Coordinate(3, 5), './game-assets/snaaket_body.png')];
     protected touchedApple = false;
     /**
      * @returns the Snake Head Cell Item
